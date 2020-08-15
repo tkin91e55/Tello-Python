@@ -38,7 +38,7 @@ brew install boost
 
 brew install boost-python
 
-brew install ffmpeg
+brew install ffmpeg --build-from-source
 
 brew install tcl-tk
 
@@ -59,9 +59,11 @@ cd h264decoder
 
 mkdir build
 
+chown tkingkwun:staff build
+
 cd build
 
-cmake ..
+cmake -DBoost_NO_BOOST_CMAKE=ON ..
 
 make
 
