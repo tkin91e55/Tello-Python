@@ -48,7 +48,7 @@ sudo pip install matplotlib --ignore-installed
 
 sudo pip install pillow --ignore-installed
 
-sudo pip install opencv-python==4.2.0.32 --ignore-installed
+sudo pip install opencv-python==3.4.5.20 --ignore-installed
 
 
 

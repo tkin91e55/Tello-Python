@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(python_h264decoder)
 
+cmake_policy(SET CMP0042 NEW)
+
 set(Python_ADDITIONAL_VERSIONS 2.7)
 
 if(UNIX AND NOT APPLE)
@@ -38,3 +40,4 @@ add_custom_command(TARGET h264decoder POST_BUILD
                    COMMAND ${CMAKE_COMMAND} -E create_symlink 
                    ${CMAKE_BINARY_DIR}/libh264decoder.so ${CMAKE_SOURCE_DIR}/libh264decoder.so)
 install(TARGETS h264decoder LIBRARY DESTINATION .)
+

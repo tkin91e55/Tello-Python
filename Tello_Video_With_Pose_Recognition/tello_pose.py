@@ -20,7 +20,7 @@ class Tello_Pose:
 
         # read the path of the trained model of the neural network for pose recognition
         self.protoFile = "model/pose/mpi/pose_deploy_linevec_faster_4_stages.prototxt"
-        self.weightsFile = "model/pose/mpi/pose_iter_160000.caffemodel"
+        self.weightsFile = "model/pose/mpi/pose_iter_440000.caffemodel"
         
         # total number of the skeleton nodes
         self.nPoints = 15
