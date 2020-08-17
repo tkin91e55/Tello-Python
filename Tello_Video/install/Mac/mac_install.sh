@@ -38,7 +38,8 @@ brew install boost
 
 brew install boost-python
 
-brew install ffmpeg --build-from-source
+#need to fake it as ffmpeg package by manupilating the /usr/local/Cellar and /usr/local/opt folders, i.e. also install ffmpeg@4 from source
+brew install ffmpeg@2.8 --build-from-source 
 
 brew install tcl-tk
 
@@ -48,6 +49,7 @@ sudo pip install matplotlib --ignore-installed
 
 sudo pip install pillow --ignore-installed
 
+#for python 2, opencv-python 3.4.5.20 tested ok
 sudo pip install opencv-python==3.4.5.20 --ignore-installed
 
 
